@@ -1,0 +1,6 @@
+////  To be sure you are not having multiple Python versions that are confusing, you should run following commands
+
+// Above command installs pandas and imports it with the same python version.
+python3 -m pip install pandas
+python3 -c 'import pandas'
+
