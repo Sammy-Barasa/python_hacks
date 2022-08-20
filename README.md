@@ -16,3 +16,11 @@ New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
 
 More on the same following this link
 [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#enable-long-paths-in-windows-10-version-1607-and-later)
+
+## Docker
+
+### Docker desktop stopped running
+Remove docker files from the following directory
+`
+Fix: Manually remove this file <HOME>\AppData\Roaming\Docker\locked-directories
+`
