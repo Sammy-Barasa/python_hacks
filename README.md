@@ -21,6 +21,7 @@ More on the same following this link
 
 ### Docker desktop stopped running
 Remove docker files from the following directory
+
 `
 Fix: Manually remove this file <HOME>\AppData\Roaming\Docker\locked-directories
 `
