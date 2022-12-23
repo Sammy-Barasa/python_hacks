@@ -25,3 +25,43 @@ Remove docker files from the following directory
 `
 Fix: Manually remove this file <HOME>\AppData\Roaming\Docker\locked-directories
 `
+
+## Git remote repo
+
+
+1. ### Set a new remote
+
+```sh
+git remote add origin https://github.com/USER/REPO.git
+
+```
+
+2. ### Check origin
+```sh
+git remote -v
+
+```
+3. ### rename your local branch:
+
+```sh
+git branch -m master main
+```
+
+4. ### change the tracked branch
+
+```sh
+git fetch -p origin
+git branch -u origin/main main
+```
+
+5. ### change the main local branch
+
+```sh
+git remote set-head origin -a
+```
+
+6. ### change git init from master to main
+
+```sh
+git config --global init.defaultBranch main
+```
