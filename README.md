@@ -65,3 +65,9 @@ git remote set-head origin -a
 ```sh
 git config --global init.defaultBranch main
 ```
+## Python notebooks
+
+### Converting python notebooks to markdown
+```
+jupyter nbconvert qc.ipynb --to markdown
+```
