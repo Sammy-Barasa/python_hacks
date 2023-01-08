@@ -71,3 +71,29 @@ git config --global init.defaultBranch main
 ```
 jupyter nbconvert qc.ipynb --to markdown
 ```
+
+
+
+
+## WSL2 
+
+### Logs in as root user by default on startup
+
+Solution is change user id of the user you want as default at the registry editor
+
+1. #### Find your UID for your username in your Linux distro
+
+```sh
+id -u <yourUserName>
+```
+
+2. #### Open registry edit and navigate to
+
+```
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\{MY-UUID}
+```
+Please be careful when editing registry keys!
+
+3. #### Replace the ***DefaultUid*** value with the UID value of the user in your distro.
+
+For more information visit [github_wsl_issue](https://github.com/microsoft/WSL/issues/4276)
