@@ -97,3 +97,16 @@ Please be careful when editing registry keys!
 3. #### Replace the ***DefaultUid*** value with the UID value of the user in your distro.
 
 For more information visit [github_wsl_issue](https://github.com/microsoft/WSL/issues/4276)
+
+## Common Django Packages
+1. django
+2. django-cors-headers
+3. django-phone-field
+4. djangorestframework
+5. djangorestframework-simplejwt
+6. drf-yasg
+7. gunicorn
+8. postgres
+9. psycopg2-binary
+10. PyJWT
+11. whitenoise
